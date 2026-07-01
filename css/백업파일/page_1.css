@@ -1,0 +1,158 @@
+/* 1페이지 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 헤더영역 시작 */
+.main_header{
+    /* 가로정렬 시키기 */
+    width: 100%;
+    height: 120px;
+    background: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu{
+    line-height: 120px;
+}
+.menu a{
+    font-family: 'Pretendard-Regular';
+    color: white;
+    line-height: 120px;
+    font-size: 1.5rem;
+}
+.menu:hover>a{
+    color: #971225;
+    font-weight: 900;
+}
+.main_logo{
+    width: 150px;
+    height: 100%;
+    margin-top: 1.2vh;
+}
+/* 헤더영역 끝 */
+
+
+.page_1{
+    width: 100%;
+    height: 820px;
+    overflow: hidden;
+    margin-top: 0;
+    position: relative;
+    /* background: pink; */
+}
+.img_circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 300px;
+    background-color: whitesmoke;
+    /* border: 1px solid #333; */
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -250px; 
+    z-index: 2;
+    position: relative;
+}
+.img_box{
+    width: 200px;
+    height: 600px;
+    transform: rotate(45deg);
+    animation: img_ani 15s infinite;
+    position: absolute;
+    left: 30%;
+    top: -15%;
+}
+@keyframes img_ani{
+    0%{
+        background-image: url(../img/skate_1.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-image: url(../img/skate_2.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url(../img/skate_3.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    75%{
+        background-image: url(../img/skate_4.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url(../img/skate_5.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.page_1>img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -250px;
+    z-index: 2;
+}
+
+.event_logo{
+    width: 3200px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30vh;
+    left: 50%;
+    margin-left: -80vw;
+}
+
+.line{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    animation-name: main_line;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.line:nth-child(1){
+    background-image: url(../img/back_typo_1_1.png);
+    animation-direction: alternate;
+
+}
+.line:nth-child(2){
+    background-image: url(../img/back_typo_2_1.png);
+    animation-direction: alternate-reverse;
+}
+.line:nth-child(3){
+    background-image: url(../img/back_typo_3_1.png);
+    animation-direction: alternate;
+}
+.line:nth-child(4){
+    background-image: url(../img/back_typo_4_1.png);
+    animation-direction: alternate-reverse;
+}
+@keyframes main_line {
+    from {
+        left: 0vw;
+    }
+    to {
+        left: 100vw;
+    }
+}

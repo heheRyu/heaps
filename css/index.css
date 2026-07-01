@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+img{
+    width: 100%;
+    height: 100%;
+    vertical-align: none;
+}
+header,article,footer{
+    /* margin: 2vw 0; */
+    /* background-color: palegoldenrod;/ */
+}
+/* 전체 부모 */
+.wrap{
+    width: 100%;
+    /* margin: 0 auto; */
+    overflow: hidden;
+}
+

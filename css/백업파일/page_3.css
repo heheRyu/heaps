@@ -1,0 +1,154 @@
+/* 3페이지 */
+.page_3{
+    width: 100%;
+    height: 1080px;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.videowrapper{
+    width: 1700px;
+    height: 820px;
+    background-color: #971225;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -410px;
+    margin-left: -850px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.videowrapper iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.banner_text{
+    width: 1700px;
+    left: 50%;
+    top: 50%;
+    margin-top: -410px;
+    margin-left: -850px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    
+}
+
+.out_move_font{
+background-color: #971225;
+border-radius: 50px 50px 0 0;
+box-sizing: border-box;
+overflow: hidden;
+font-family: 'Archivo Black', sans-serif;
+}
+
+
+.move_font{
+    font-size: 50px;
+    /* animation-name: in_move; */
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+
+@keyframes in_move{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(1700px)
+    }
+}
+
+
+
+
+.banner_main{
+    position: absolute;
+    width: 880px;
+    height:180px;
+    /* background-color: blue; */
+    left: 50%;
+    top: 150px;
+    margin-left: -440px;
+    font-size: 20px;
+    text-align: 22px;
+    font-weight: 900;
+    text-shadow: 5px 0 10px black;
+}
+.video_banner:hover .banner_main{
+    display: none;
+}
+
+.see_more_button{
+    position: absolute;
+    width: 300px;
+    height:60px ;
+    background-color: #971225;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    left: 50%;
+    margin-left: -150px;
+    top: 610px;
+    font-family: 'Archivo Black', sans-serif;
+}
+.see_more_button li{
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-weight: 900;
+
+}
+
+.see_more_button li:hover{
+    background-color: white;
+    color: #971225;
+    border-radius: 20px;
+}
+
+
+.culture_button{
+    position: absolute;
+    width: 420px;
+    height: 80px;
+    background-color: #971225;
+    border-radius: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    padding: 10px;
+    top: 700px;
+    left: 59%;
+    font-family: 'Archivo Black', sans-serif;
+    /* 중앙 정렬이 안됨 그래서 수치상으로 305가 맞는데
+    5마진 레프트에 50을 더 줬음 */
+    margin-left: -355px;
+} 
+
+.culture_button li{
+    width: 100%;
+    float: left;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 2.8rem;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.culture_button li:hover{
+    background-color: white;
+    color: #971225;
+}

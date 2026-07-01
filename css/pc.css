@@ -1,0 +1,836 @@
+/* @media all and (min-width: 1200px){ */
+/* 1페이지 시작*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 탑버튼 */
+.side_menu{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #971225;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    line-height:50px;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 99;
+}
+.side_menu>a{
+    color: white;
+
+}
+
+/* 헤더영역 시작 */
+.main_header{
+    /* 가로정렬 시키기 */
+    width: 100%;
+    height: 120px;
+    background: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu{
+    line-height: 120px;
+}
+.menu a{
+    font-family: 'Pretendard-Regular';
+    color: white;
+    line-height: 120px;
+    font-size: 1.5rem;
+}
+.menu:hover>a{
+    color: #971225;
+    font-weight: 900;
+}
+.main_logo{
+    width: 150px;
+    height: 100%;
+    margin-top: 1.2vh;
+}
+/* 헤더영역 끝 */
+
+
+.page_1{
+    width: 100%;
+    height: 820px;
+    overflow: hidden;
+    margin-top: 0;
+    position: relative;
+    /* background: pink; */
+}
+.img_circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 300px;
+    background-color : rgba(42, 41, 41, 0.9);
+    /* border: 1px solid #333; */
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -250px; 
+    z-index: 2;
+    position: relative;
+}
+.img_box{
+    width: 200px;
+    height: 600px;
+    transform: rotate(45deg);
+    animation: img_ani 15s infinite;
+    position: absolute;
+    left: 30%;
+    top: -15%;
+}
+@keyframes img_ani{
+    0%{
+        background-image: url(../img/skate_1.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-image: url(../img/skate_2.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url(../img/skate_3.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    75%{
+        background-image: url(../img/skate_4.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url(../img/skate_5.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.page_1>img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -250px;
+    z-index: 2;
+}
+
+.event_logo{
+    width: 3200px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30vh;
+    left: 50%;
+    margin-left: -80vw;
+}
+
+.line{
+    width: 130%;
+    height: 150px;
+    position: relative;
+    animation-name: main_line;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.line:nth-child(1){
+    background-image: url(../img/back_typo_1_1.png);
+    animation-direction: alternate;
+
+}
+.line:nth-child(2){
+    background-image: url(../img/back_typo_2_1.png);
+    animation-direction: alternate-reverse;
+}
+.line:nth-child(3){
+    background-image: url(../img/back_typo_3_1.png);
+    animation-direction: alternate;
+}
+.line:nth-child(4){
+    background-image: url(../img/back_typo_4_1.png);
+    animation-direction: alternate-reverse;
+}
+@keyframes main_line {
+    from {
+        left: 0vw;
+    }
+    to {
+        left: 100vw;
+    }
+}
+/* 1페이지 끝 */
+
+/* 2페이지 시작 */
+.page_2{
+    width: 100%;
+    height: 1024px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+/* 2페이지 타이틀 */
+.page_2_title{
+    width: 100%;
+    height: 10vw;
+    text-align: center;
+    margin-left: -100%;
+    margin-top: 4vw;
+    transition-duration: 0.55s;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 8rem;
+    letter-spacing: -0.5rem;
+    line-height: 6rem;
+    color: #971225;
+}
+/* 탭화면에서 없애기 */
+.click_box{
+    position: absolute;
+    top: 18vw;
+    right: 10%;
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(57, 7, 7);
+    animation: click_ani 1s step-end infinite;
+    font-family: 'Do Hyeon', sans-serif;
+
+}
+
+@keyframes click_ani{
+    50%{
+        opacity: 0;
+    }
+}
+
+.page_2:hover .page_2_title{
+    margin-left: 2%;
+}
+
+
+/* 아코디언 메뉴 시작 */
+.card_wrap{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.card_box{
+    width: 300px;
+    height: 100%;
+    border-radius: 20px;
+    /* background: #FED6E3; */
+    transition: .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.card_box div{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid black;
+    line-height: 350px;
+    text-align: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back{
+    border-radius: 20px;
+    transform: rotateY(180deg);
+    /* background: #36B7B1; */
+    color: #fff;
+}
+.card:hover .card_box{
+    transform: rotateY(180deg);  
+}
+
+/* 카드 개별 이미지 */
+.card_box_1>.front{
+    background-image: url(../img/front_1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card_box_1>.back{
+    background-image: url(../img/back_1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.card_box_2>.front{
+    background-image: url(../img/front_2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card_box_2>.back{
+    background-image: url(../img/back_2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card_box_3>.front{
+    background-image: url(../img/front_3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card_box_3>.back{
+    background-image: url(../img/back_3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card_box_4>.front{
+    background-image: url(../img/front_4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.card_box_4>.back{
+    background-image: url(../img/back_4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.back>p{
+    display: block;
+    width: 12vw;
+    height: 5vw;
+    font-size: 0.7vw;
+    line-height: 1vw;
+    text-align: left;
+    overflow: hidden;
+    /* background-color: palegoldenrod; */
+    color: #333;
+    position: absolute;
+    bottom: 1.2vw;
+    left: 50%;
+    margin-left: -6vw;
+}
+
+/* 2페이지 끝 */
+
+/* 2-3페이지 사이 구분영역 */
+.out_move_font{
+    /* background-color: #971225; */
+    border-top: 5px solid #333;
+    border-bottom: 5px solid #333;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Archivo Black', sans-serif;
+    }
+    
+    .move_font{
+        font-size: 8vw;
+        text-align: center;
+        /* animation-name: in_move; */
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+/* 3페이지 시작*/
+.page_3{
+    width: 100%;
+    height: 1080px;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.videowrapper{
+    width: 98%;
+    height: 45vw;
+    background-color: #971225;
+    position: absolute;
+    left: 1%;
+    top: 5vw;
+    /* margin-top: -24%;
+    margin-left: -45vw; */
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.videowrapper iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.banner_text{
+    width: 1700px;
+    left: 50%;
+    top: 50%;
+    margin-top: -410px;
+    margin-left: -850px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    
+}
+
+.iden_box{
+    width: 130%;
+    height: 15vw;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 15vw;
+    margin-left: -125%;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+}
+.iden_box:hover{
+    margin-left: -10%;
+}
+.banner_main{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    font-weight: 100;
+    margin-top: 2%;
+}
+
+.iden_box p{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transform: rotate(-90deg);
+}
+
+
+@keyframes in_move{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(1700px)
+    }
+}
+
+
+
+.see_more_button{
+    position: absolute;
+    width: 220px;
+    height: 50px ;
+    background-color: #971225;
+    border-radius: 10px;
+    /* padding: 10px;
+    box-sizing: border-box; */
+    left: 50%;
+    margin-left: -110px;
+    top: 80%;
+    font-family: 'Archivo Black', sans-serif;
+}
+.see_more_button li{
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    line-height: 3.1rem;
+    font-weight: 900;
+
+}
+
+.see_more_button li:hover{
+    background-color: white;
+    color: #971225;
+    border-radius: 10px;
+}
+
+
+.culture_button{
+    position: absolute;
+    width: 420px;
+    height: 80px;
+    background-color: #971225;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    padding: 10px;
+    top: 700px;
+    left: 59%;
+    font-family: 'Archivo Black', sans-serif;
+    /* 중앙 정렬이 안됨 그래서 수치상으로 305가 맞는데
+    5마진 레프트에 50을 더 줬음 */
+    margin-left: -355px;
+} 
+
+.culture_button li{
+    width: 100%;
+    float: left;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 2.8rem;
+    text-align: center;
+    padding: 5px 18px;
+}
+
+.culture_button li:hover{
+    background-color: white;
+    color: #971225;
+}
+/* 3페이지 끝 */
+
+/* 4페이지 시작 */
+.page_4{
+    width: 100%;
+    height: 58vw;
+    background-color:white;
+    }
+    .page_4 h6,h2{
+        font-family: 'Archivo Black', sans-serif;
+    }
+    
+    .mask_box{
+        width: 100%;
+        height: 58vw;
+        /* background-color:red; */
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    .mask_box input{
+        display: none;
+    }
+    
+    .out_move_box{
+    width:300vw;
+    height: 58vw;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    }
+    .move_box,.move_box_2,.move_box_3{
+        width: 100vw;
+        height: 58vw;
+        float: left;
+        background-color: white;
+    }
+    
+    .in_img_box_1{
+        position: relative;
+        width: 70%;
+        height: 58vw;
+        float: left;
+        overflow: hidden;
+        background-color: #36B7B1;
+    }
+    .in_img_box_1 h2:nth-child(1){
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-size: 3.75rem;
+        font-weight: 900px;
+        bottom: 150px;
+        left: 1%;
+        /* background-color: aqua; */
+    }
+    .in_img_box_1 img:nth-child(2){
+        width: 100%;
+        height: 100%;
+    }
+    .in_img_box_2{
+        position: relative;
+        width: 28.5%;
+        height: 58vw;
+        float: left;
+        overflow: hidden;
+        /* background-color: green; */
+    }
+
+    .in_img_box_2 .p2{
+        position: absolute;
+        float: right;
+        color: #971225;
+        font-size: 2.5rem;
+        font-weight: 900px;
+        text-align: right;
+        bottom: 160px;
+        right: 2%;
+    }
+    
+    .in_img_box_2 .p2:nth-child(2){
+        position: absolute;
+        bottom:80px;
+        right: 2%;
+        font-size: 0.8125rem;
+        /* background-color: orange; */
+    }
+
+    .in_img_box_2 img:last-child{
+        position: absolute;
+        width: 100%;
+        height: 35%;
+        top: 0;
+        right: 0;
+
+    }
+
+
+
+    /*==========================*/
+    .in_img_box_3{
+        position: relative;
+        width: 70%;
+        height: 58vw;
+        float: left;
+        overflow: hidden;
+        background-color: #36B7B1;
+    }
+    
+    
+    .in_img_box_3 .p3{
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-size: 3.75rem;
+        font-weight: 900px;
+        bottom: 150px;
+        left: 1%;
+    }
+
+    .in_img_box_3 img:nth-child(2){
+        width: 100%;
+        height: 100%;
+    }
+    
+    .in_img_box_4{
+        position: relative;
+        width: 28.5%;
+        height: 58vw;
+        float: left;
+        overflow: hidden;
+        /* background-color: green; */
+    }
+
+    .in_img_box_4 .p4{
+        float: right;
+        position: absolute;
+        color: #971225;
+        font-size: 2.5rem;
+        font-weight: 900px;
+        text-align: right;
+        right: 2%;
+        bottom: 160px;
+        z-index: 3;
+    }
+    
+    .in_img_box_4 .p4:nth-child(2){
+        position: absolute;
+        bottom: 40px;
+        font-size: 0.8125rem;
+        
+    }
+    
+    .in_img_box_4 img:nth-child(3){
+        position: absolute;
+        width: 100%;
+        height: 35%;
+        right: 0;
+        top: 0;
+    }
+    
+    
+    .in_img_box_5{
+        position: relative;
+        width: 70%;
+        height: 58vw;
+        float: left;
+        overflow: hidden;
+        background-color: #36B7B1;  
+    }
+    
+    .in_img_box_5 .p5{
+        color: white;
+        font-size: 3.75rem;
+        font-weight: 900px;
+        position: absolute;
+        left: 1%;
+        bottom: 180px;
+        z-index: 4;
+    }
+
+    .in_img_box_5 img:nth-child(2){
+       width: 100%;
+       height: 100%;
+    }
+    
+    .in_img_box_6{
+        position: relative;
+        width: 28.5%;
+        height: 58vw;
+        float: left;
+        overflow: hidden;
+        /* background-color: green;  */
+    }
+
+    .in_img_box_6 img:nth-child(1){
+        position: absolute;
+        width: 100%;
+        height: 35%;
+        right: 0;
+        top: 0;
+    }
+
+    .in_img_box_6 .p6{
+        position: absolute;
+        color: #971225;
+        font-size: 2.5rem;
+        font-weight: 900px;
+        text-align: right;
+        bottom: 160px;
+        right: 2%;
+        z-index: 3;
+    }
+    
+    .in_img_box_6 .p6:nth-child(3){
+        position: absolute;
+        bottom: 40px;
+        font-size: 0.8125rem;
+    }
+    
+    .label_box{
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -40px;
+        width: 80px;
+        height: 20px;
+        /*background-color: aqua;*/
+    }
+    
+    .but{
+       display: block;
+       float: left;
+       width: 20px;
+       height: 20px;
+       text-align: center;
+       line-height: 20px;
+       font-size: 20px;
+       background-color:wheat;
+       border-radius: 10px;
+       z-index: 999;
+       position: relative; 
+    }
+    
+    .but_2{
+        margin: 0 10px;
+    }
+    
+    #input_1:checked~.out_move_box{
+        left: 0;
+    }
+    #input_2:checked~.out_move_box{
+        left: -100%;
+        /* 1920의 30%=576 */
+    }
+    #input_3:checked~.out_move_box{
+        left: -200%;
+    }
+    
+    #input_1:checked~.label_box .but_1{
+        background-color: #971225;
+    }
+    #input_2:checked~.label_box .but_2{
+        background-color: #971225;
+    }
+    #input_3:checked~.label_box .but_3{
+        background-color: #971225;
+    }
+
+
+    /* 푸터 시작 */
+    @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+    footer{
+        width: 100%;
+        height: 300px;
+        background: black;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .slogan,.imformation,.reserved{
+        color: white;
+    }
+    .imformation,.reserved{
+        font-family: 'Pretendard-Regular';
+        font-weight: 200;
+        position: absolute;
+    }
+    .slo_box{
+        width: 100%;
+        height: 100px;
+        margin-top: 30px;
+    }
+    .slogan{
+        /* 가운데 정렬 시키기 */
+        width: 900px;
+        height: 100px;
+        /* top: 10%; */
+        margin: 0 auto;
+        font-size: 5rem;
+        font-family: 'Archivo Black', sans-serif;
+        /* background: pink; */
+    }
+    .imformation{
+        position: absolute;
+        top: 60%;
+        left: 2%;
+        width: 100%;
+        height: 50px;
+        bottom: 80px;
+        line-height: 20px;
+        text-align: left;
+        font-size: 0.9rem;
+        /* background: lightblue; */
+    }
+    .reserved{
+        position: absolute;
+        top: 80%;
+        left: 2%;
+        width: 100%;
+        bottom: 50px;
+        font-size: 12px;
+        /* background: lightgoldenrodyellow; */
+    }
+    /* 푸터 끝 */
+    
+/* } */
+/* pc버전 끝 */

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620.77 110.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: FONTSPRINGDEMO-IntegralCFHeavyRegular, 'FONTSPRING DEMO - Integral CF Heavy';
+        font-size: 70.76px;
+      }
+
+      .cls-2 {
+        fill: #971225;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_1-2" data-name="레이어 1">
+    <g>
+      <polygon class="cls-2" points="0 110.67 620.77 110.67 620.77 0 106.8 0 0 110.67"/>
+      <text class="cls-1" transform="translate(149.71 78.87)"><tspan x="0" y="0">SEE MORE</tspan></text>
+    </g>
+  </g>
+</svg>

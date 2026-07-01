@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background: black;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.slogan,.imformation,.reserved{
+    color: white;
+}
+.imformation,.reserved{
+    font-family: 'Pretendard-Regular';
+    font-weight: 200;
+    position: absolute;
+}
+.slo_box{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+.slogan{
+    /* 가운데 정렬 시키기 */
+    width: 900px;
+    height: 100px;
+    /* top: 10%; */
+    margin: 0 auto;
+    font-size: 5rem;
+    font-family: 'Archivo Black', sans-serif;
+    /* background: pink; */
+}
+.imformation{
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    width: 100%;
+    height: 50px;
+    bottom: 100px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 0.9rem;
+    /* background: lightblue; */
+}
+.reserved{
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    width: 100%;
+    bottom: 50px;
+    font-size: 12px;
+    /* background: lightgoldenrodyellow; */
+}

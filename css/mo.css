@@ -1,0 +1,280 @@
+@media all and (max-width: 719px){
+
+
+    .page_4{
+        width: 100%;
+        height: 200vw;
+        background-color:white;
+        }
+        .page_4 h6,h2{
+            font-family: 'Archivo Black', sans-serif;
+        }
+        
+        .mask_box{
+            width: 100%;
+            height: 200vw;
+            /* background-color:red; */
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        .mask_box input{
+            display: none;
+        }
+        
+        .out_move_box{
+        width:300vw;
+        height: 200vw;
+        position: absolute;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        }
+        .move_box,.move_box_2,.move_box_3{
+            width: 100vw;
+            height: 200vw;
+            float: left;
+            background-color: white;
+        }
+        
+        .in_img_box_1{
+            position: relative;
+            width: 100%;
+            height: 140vw;
+            overflow: hidden;
+            background-color: #36B7B1;
+        }
+        .in_img_box_1 h2:nth-child(1){
+            position: absolute;
+            z-index: 2;
+            color: white;
+            font-size: 3.4rem;
+            font-weight: 500px;
+            bottom: 10%;
+            left: 1%;
+            /* background-color: aqua; */
+        }
+        .in_img_box_1 img:nth-child(2){
+            width: 100%;
+            height: 100%;
+        }
+        .in_img_box_2{
+            position: relative;
+            width: 100%;
+            height: 60vw;
+            overflow: hidden;
+            /* background-color: green; */
+        }
+    
+        .in_img_box_2 .p2{
+            position: absolute;
+            float: left;
+            color: #971225;
+            font-size: 2rem;
+            font-weight: 700px;
+            text-align: left;
+            left: 2%;
+            top: 3%;
+            z-index: 2;
+        }
+        
+        .in_img_box_2 .p2:nth-child(2){
+            position: absolute;
+            bottom:80px;
+            font-size: 0.8rem;
+            top: 50%;
+            /* background-color: orange; */
+        }
+    
+        .in_img_box_2 img:last-child{
+            position: absolute;
+            width: 40%;
+            height: 25vw;
+            top: 0;
+            right: 0;
+            z-index: 1;
+    
+        }
+    
+    
+    
+        /*==========================*/
+        .in_img_box_3{
+            position: relative;
+            width: 100%;
+            height: 140vw;
+            overflow: hidden;
+            background-color: #36B7B1;
+        }
+        
+        
+        .in_img_box_3 .p3{
+            position: absolute;
+            z-index: 2;
+            color: white;
+            font-size: 3.4rem;
+            font-weight: 500px;
+            bottom: 10%;
+            left: 1%;
+        }
+    
+        .in_img_box_3 img:nth-child(2){
+            width: 100%;
+            height: 100%;
+        }
+        
+        .in_img_box_4{
+            position: relative;
+            width: 100%;
+            height: 60vw;
+            overflow: hidden;
+            /* background-color: green; */
+        }
+    
+        .in_img_box_4 .p4{
+            position: absolute;
+            float: left;
+            color: #971225;
+            font-size: 2rem;
+            font-weight: 700px;
+            text-align: left;
+            left: 2%;
+            top: 3%;
+            z-index: 2;
+        }
+        
+        .in_img_box_4 .p4:nth-child(2){
+            position: absolute;
+            bottom:80px;
+            font-size: 0.8rem;
+            top: 50%;
+        }
+        
+        .in_img_box_4 img:nth-child(3){
+            position: absolute;
+            width: 40%;
+            height: 25vw;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        
+        
+        .in_img_box_5{
+            position: relative;
+            width: 100%;
+            height: 140vw;
+            overflow: hidden;
+            background-color: #36B7B1;  
+        }
+        
+        .in_img_box_5 .p5{
+            position: absolute;
+            z-index: 2;
+            color: white;
+            font-size: 3.4rem;
+            font-weight: 500px;
+            bottom: 10%;
+            left: 1%;
+        }
+    
+        .in_img_box_5 img:nth-child(2){
+           width: 100%;
+           height: 100%;
+        }
+        
+        .in_img_box_6{
+            position: relative;
+            width: 100%;
+            height: 60vw;
+            overflow: hidden;
+            /* background-color: green;  */
+        }
+    
+        .in_img_box_6 img:nth-child(1){
+            position: absolute;
+            width: 40%;
+            height: 25vw;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    
+        .in_img_box_6 .p6{
+            position: absolute;
+            float: left;
+            color: #971225;
+            font-size: 2rem;
+            font-weight: 700px;
+            text-align: left;
+            left: 2%;
+            top: 3%;
+            z-index: 2;
+        }
+        
+        .in_img_box_6 .p6:nth-child(3){
+            position: absolute;
+            bottom:80px;
+            font-size: 0.8rem;
+            top: 50%;
+        }
+        
+        .label_box{
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            margin-left: -40px;
+            width: 80px;
+            height: 20px;
+            /*background-color: aqua;*/
+        }
+        
+        .but{
+           display: block;
+           float: left;
+           width: 20px;
+           height: 20px;
+           text-align: center;
+           line-height: 20px;
+           font-size: 20px;
+           background-color:wheat;
+           border-radius: 10px;
+           z-index: 999;
+           position: relative; 
+        }
+        
+        .but_2{
+            margin: 0 10px;
+        }
+        
+        #input_1:checked~.out_move_box{
+            left: 0;
+        }
+        #input_2:checked~.out_move_box{
+            left: -100%;
+            /* 1920의 30%=576 */
+        }
+        #input_3:checked~.out_move_box{
+            left: -200%;
+        }
+        
+        #input_1:checked~.label_box .but_1{
+            background-color: #971225;
+        }
+        #input_2:checked~.label_box .but_2{
+            background-color: #971225;
+        }
+        #input_3:checked~.label_box .but_3{
+            background-color: #971225;
+        }
+
+
+
+
+
+
+
+
+}
